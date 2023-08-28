@@ -15,9 +15,9 @@ class Queue(AbstractQueue):
         self.data.append(value)
 
     def dequeue(self):
-       if not self.is_empty():
+        if not self.is_empty():
             return self.data.pop(0)
-       else:
+        else:
             raise IndexError("Fila vazia!")
 
     def search(self, index):
